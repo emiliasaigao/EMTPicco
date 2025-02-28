@@ -1,0 +1,39 @@
+#version 450
+
+layout(local_size_x = 16, local_size_y = 16, local_size_z = 1) in;
+
+layout(set = 0, binding = 0) uniform sampler2D inputImage;
+layout(set = 0, binding = 1, rgba16f) uniform writeonly image2D outputImage;
+
+// Push Constant 控制模糊方向
+layout(push_constant) uniform BlurDirection {
+    ivec2 direction;  // (1,0) = 水平模糊, (0,1) = 垂直模糊
+    int bulr_kernal;
+} blurVar;
+
+void computeGaussianWeights(out float kernel_value[8], int radius) {
+    float sigma = max(float(radius) / 3.0, 0.1);  // 计算 sigma，确保不为 0
+    float sum = 0.0;
+
+    for (int i = 0; i <= radius; i++) {
+        kernel_value[i] = exp(-float(i * i) / (2.0 * sigma * sigma));
+        sum += (i == 0) ? kernel_value[i] : 2.0 * kernel_value[i]; 
+    }
+
+    for (int i = 0; i <= radius; i++) {
+        kernel_value[i] /= sum;  // 归一化
+    }
+}
+
+void main() {
+    ivec2 uv = ivec2(gl_GlobalInvocationID.xy);
+    highp vec3 color = vec3(0.0);
+    highp float weight[5] = float[](0.227027, 0.1945946, 0.1216216, 0.054054, 0.016216);
+    ivec2 right_top_point = textureSize(inputImage, 0) - 1;
+
+    for (int i = -4; i <= 4; i++) {
+        color += texelFetch(inputImage, clamp(uv + blurVar.direction * i, ivec2(1), right_top_point), 0).rgb * weight[abs(i)];
+    }
+
+    imageStore(outputImage, uv, vec4(color, 1.0));
+}

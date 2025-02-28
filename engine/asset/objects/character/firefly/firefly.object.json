@@ -1,0 +1,190 @@
+{
+    "components": [
+        {
+            "$context": {
+              "transform": {
+                "position": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "rotation": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "scale": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                }
+              }
+            },
+            "$typeName": "TransformComponent"
+        },
+        {
+            "$typeName": "MeshComponent",
+            "$context": {
+                "mesh_res": {
+                    "sub_meshes": [
+                      {
+                        "material": "asset/objects/character/firefly/components/mesh/material/liuying_material_eyes.material.json",
+                        "obj_file_ref": "asset/objects/character/firefly/components/mesh/liuying_eyes.obj",
+                        "transform": {
+                          "position": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "rotation": {
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        }
+                      },
+                      {
+                        "material": "asset/objects/character/firefly/components/mesh/material/liuying_material_eyebrows.material.json",
+                        "obj_file_ref": "asset/objects/character/firefly/components/mesh/liuying_eyebrows.obj",
+                        "transform": {
+                          "position": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "rotation": {
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        }
+                      },
+                      {
+                        "material": "asset/objects/character/firefly/components/mesh/material/liuying_material_face.material.json",
+                        "obj_file_ref": "asset/objects/character/firefly/components/mesh/liuying_face.obj",
+                        "transform": {
+                          "position": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "rotation": {
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        }
+                      },
+                      {
+                        "material": "asset/objects/character/firefly/components/mesh/material/liuying_material_mouth.material.json",
+                        "obj_file_ref": "asset/objects/character/firefly/components/mesh/liuying_mouth.obj",
+                        "transform": {
+                          "position": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "rotation": {
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        }
+                      },
+                      {
+                        "material": "asset/objects/character/firefly/components/mesh/material/liuying_material_body.material.json",
+                        "obj_file_ref": "asset/objects/character/firefly/components/mesh/liuying_body.obj",
+                        "transform": {
+                          "position": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "rotation": {
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        }
+                      },
+                      {
+                        "material": "asset/objects/character/firefly/components/mesh/material/liuying_material_hair.material.json",
+                        "obj_file_ref": "asset/objects/character/firefly/components/mesh/liuying_hair.obj",
+                        "transform": {
+                          "position": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "rotation": {
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        }
+                      },
+                      {
+                        "material": "asset/objects/character/firefly/components/mesh/material/liuying_material_eye_black.material.json",
+                        "obj_file_ref": "asset/objects/character/firefly/components/mesh/liuying_eye_black.obj",
+                        "transform": {
+                          "position": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "rotation": {
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        }
+                      }
+                    ]
+                }
+            }
+        }
+    ]
+}

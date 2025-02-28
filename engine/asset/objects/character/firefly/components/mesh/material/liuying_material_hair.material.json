@@ -1,0 +1,9 @@
+{
+  "is_NBR_material": true,
+  "base_colour_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Hair_Color.png",
+  "light_map_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Hair_LightMap.png",
+  "ramp_warm_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Hair_Warm_Ramp.png",
+  "ramp_cool_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Hair_Cool_Ramp.png",
+  "face_map_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Hair_Map.png",
+  "nbr_material_setting_file": "asset/objects/character/firefly/components/mesh/material/material_setting/hair.materialsetting.json"
+}

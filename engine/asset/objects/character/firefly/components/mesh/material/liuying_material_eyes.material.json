@@ -1,0 +1,9 @@
+{
+  "is_NBR_material": true,
+  "base_colour_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Face_Color.png",
+  "light_map_texture_file": "",
+  "ramp_warm_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Body_Warm_Ramp.png",
+  "ramp_cool_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Body_Warm_Ramp.png",
+  "face_map_texture_file": "asset/objects/character/firefly/components/mesh/material/texture/Face_Map.png",
+  "nbr_material_setting_file": "asset/objects/character/firefly/components/mesh/material/material_setting/eyes.materialsetting.json"
+}
