@@ -1,6 +1,8 @@
 # EMTPicco Engine(Base On Piccolo Engine)
 
-**EMTPicco Engine**是基于Piccolo引擎0.08版本的Vulkan API及二次元渲染的实践项目，非常感谢小引擎成员们的倾心教学，原项目地址：[BoomingTech/Piccolo: Piccolo (formerly Pilot) – mini game engine for games104](https://github.com/BoomingTech/Piccolo)，同时，非常感谢B站UP主[[给你柠檬椰果养乐多你会跟我玩吗](https://space.bilibili.com/32704665)](https://space.bilibili.com/32704665/dynamic?spm_id_from=333.1365.list.card_title.click)的二次元渲染教程。本项目内同时附上了学习笔记，再次感谢各位大佬们的辛勤付出(●'◡'●)。
+**EMTPicco Engine**是基于Piccolo引擎0.08版本的Vulkan API及二次元渲染的实践项目，非常感谢小引擎成员们的倾心教学，原项目地址：[BoomingTech/Piccolo: Piccolo (formerly Pilot) – mini game engine for games104](https://github.com/BoomingTech/Piccolo)，同时，非常感谢B站养乐多佬的二次元渲染教程。[[给你柠檬椰果养乐多你会跟我玩吗](https://space.bilibili.com/32704665)](https://space.bilibili.com/32704665/dynamic?spm_id_from=333.1365.list.card_title.click)
+
+本项目内同时附上了学习笔记，再次感谢各位大佬们的辛勤付出(●'◡'●)。
 
 另外，用于实践的模型来自: miHoYo ｜ 神帝宇，贴图来自[umaichanuwu/StarRailTextures: All extracted textures from honkai star rail at different versions](https://github.com/umaichanuwu/StarRailTextures)，仅用作学习交流目的。
 
