@@ -291,10 +291,13 @@ namespace Piccolo
         deferred_lighting_pass.preserveAttachmentCount = 0;
         deferred_lighting_pass.pPreserveAttachments    = NULL;
 
-        VkAttachmentReference forward_lighting_pass_color_attachments_reference[1] = {};
+        VkAttachmentReference forward_lighting_pass_color_attachments_reference[2] = {};
         forward_lighting_pass_color_attachments_reference[0].attachment =
             &backup_odd_color_attachment_description - attachments_dscp;
         forward_lighting_pass_color_attachments_reference[0].layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL;
+        forward_lighting_pass_color_attachments_reference[1].attachment =
+            &gbuffer_normal_attachment_description - attachments_dscp;
+        forward_lighting_pass_color_attachments_reference[1].layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL;
 
         VkAttachmentReference forward_lighting_pass_depth_attachment_reference {};
         forward_lighting_pass_depth_attachment_reference.attachment = &depth_attachment_description - attachments_dscp;

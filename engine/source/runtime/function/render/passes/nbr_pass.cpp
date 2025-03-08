@@ -343,9 +343,9 @@ namespace Piccolo
 
             VkPipelineDepthStencilStateCreateInfo depth_stencil_create_info {};
             depth_stencil_create_info.sType                 = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO;
-            depth_stencil_create_info.depthTestEnable       = VK_FALSE;
-            depth_stencil_create_info.depthWriteEnable      = VK_FALSE;
-            depth_stencil_create_info.depthCompareOp        = VK_COMPARE_OP_LESS_OR_EQUAL;
+            depth_stencil_create_info.depthTestEnable       = VK_TRUE;
+            depth_stencil_create_info.depthWriteEnable      = VK_TRUE;
+            depth_stencil_create_info.depthCompareOp        = VK_COMPARE_OP_LESS;
             depth_stencil_create_info.depthBoundsTestEnable = VK_FALSE;
             depth_stencil_create_info.stencilTestEnable     = VK_TRUE;
             depth_stencil_create_info.front.failOp          = VK_STENCIL_OP_KEEP;
@@ -462,7 +462,7 @@ namespace Piccolo
             depth_stencil_create_info.sType                 = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO;
             depth_stencil_create_info.depthTestEnable       = VK_TRUE;
             depth_stencil_create_info.depthWriteEnable      = VK_TRUE;
-            depth_stencil_create_info.depthCompareOp        = VK_COMPARE_OP_LESS_OR_EQUAL;
+            depth_stencil_create_info.depthCompareOp        = VK_COMPARE_OP_LESS;
             depth_stencil_create_info.depthBoundsTestEnable = VK_FALSE;
             depth_stencil_create_info.stencilTestEnable     = VK_TRUE;
             depth_stencil_create_info.front.failOp          = VK_STENCIL_OP_KEEP;
@@ -579,7 +579,7 @@ namespace Piccolo
             depth_stencil_create_info.sType                 = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO;
             depth_stencil_create_info.depthTestEnable       = VK_TRUE;
             depth_stencil_create_info.depthWriteEnable      = VK_TRUE;
-            depth_stencil_create_info.depthCompareOp        = VK_COMPARE_OP_LESS_OR_EQUAL;
+            depth_stencil_create_info.depthCompareOp        = VK_COMPARE_OP_LESS;
             depth_stencil_create_info.depthBoundsTestEnable = VK_FALSE;
             depth_stencil_create_info.stencilTestEnable     = VK_TRUE;
             depth_stencil_create_info.front.failOp          = VK_STENCIL_OP_KEEP;
@@ -696,7 +696,7 @@ namespace Piccolo
             depth_stencil_create_info.sType                 = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO;
             depth_stencil_create_info.depthTestEnable       = VK_TRUE;
             depth_stencil_create_info.depthWriteEnable      = VK_TRUE;
-            depth_stencil_create_info.depthCompareOp        = VK_COMPARE_OP_LESS_OR_EQUAL;
+            depth_stencil_create_info.depthCompareOp        = VK_COMPARE_OP_LESS;
             depth_stencil_create_info.depthBoundsTestEnable = VK_FALSE;
             depth_stencil_create_info.stencilTestEnable     = VK_TRUE;
             depth_stencil_create_info.front.failOp          = VK_STENCIL_OP_KEEP;
@@ -2594,9 +2594,9 @@ namespace Piccolo
 
                 uint32_t total_instance_count = 1;
 
-                m_nbr_outline_push_constant_object.outline_width    = 0.7;
+                m_nbr_outline_push_constant_object.outline_width    = 0.9;
                 m_nbr_outline_push_constant_object.outline_z_offset = 0.0;
-                m_nbr_outline_push_constant_object.outline_gamma    = 48.0;
+                m_nbr_outline_push_constant_object.outline_gamma    = 128.0;
 
                 vkCmdPushConstants(m_vulkan_rhi->m_current_command_buffer,
                                    m_render_pipelines[_nbr_pipeline_type_outline].layout,

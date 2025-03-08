@@ -436,7 +436,7 @@ namespace Piccolo
         // reorganize mesh
         for (RenderMeshNode& node : *(m_visiable_nodes.p_main_camera_visible_mesh_nodes))
         {
-            if (node.nbr_mesh_id == 6) // dont write eye_black(is transparent)
+            if (node.is_NBR_material)
                 continue;
             auto& mesh_instanced = pre_depth_mesh_drawcall_batch[node.ref_material];
             auto& mesh_nodes     = mesh_instanced[node.ref_mesh];

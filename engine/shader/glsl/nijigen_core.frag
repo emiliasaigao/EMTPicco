@@ -100,6 +100,7 @@ layout(location = 3) in highp vec3 in_view_dir;
 layout(location = 4) in highp vec2 in_texcoord;
 
 layout(location = 0) out highp vec4 out_color;
+layout(location = 1) out highp vec4 out_normal;
 
 highp float saturate(highp float x) {
     return clamp(x, 0.0, 1.0);
@@ -122,6 +123,8 @@ void main()
     highp vec3 lightDirWS = normalize(scene_directional_light.direction);
     highp vec3 positionCS = in_clip_position.xyz / in_clip_position.w;
     positionCS.xy         = positionCS.xy * 0.5 + 0.5;
+
+    out_normal.rgb = normalWS * 0.5 + 0.5;
 
     highp vec4  areaMap = texture(base_color_texture_sampler, uv);
     highp vec3 baseColor = areaMap.rgb;

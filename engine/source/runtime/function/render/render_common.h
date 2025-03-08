@@ -190,7 +190,7 @@ namespace Piccolo
         //float SSAORadius = 0.1;
         //float SSAOBias = 0.01;
         //int SSAOKernelSize = 32;
-        float HBAOIntensity = 1.0f;
+        float HBAOIntensity = 0.48f;
         float HBAORadius    = 1.625f;
         float HBAOMaxRadiusPixels = 64.f;
         float HBAOAngleBias       = 0.25f;
